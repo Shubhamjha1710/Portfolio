@@ -1,0 +1,58 @@
+.project-container{
+    margin : 10px;
+    padding : 10px;
+    text-align : center;
+}
+
+.project-cards-collection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items : center;
+    justify-content : center;
+}
+
+.project-container h1{
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    margin : 10px;
+}
+
+.project-cards{
+    width: 38%;
+    background-color : rgba(255, 255, 255, 0.2);
+    padding : 20px;
+    margin : 20px;
+    text-align : center;
+    border-radius :25px;
+    /* border-top : 6px solid blue;
+    border-right : 6px solid blue; */
+    border-top : 6px solid rgba(255, 255, 255, 0.5);
+    border-right : 6px solid rgba(255, 255, 255, 0.5);
+}
+
+.project-discription{
+    padding : 25px;
+}
+
+.project-cards a{
+    border-radius : 10px;
+    text-decoration: none;
+    border: 2px solid blue;
+    padding : 10px;
+    background-color : blue;
+    color : white;
+    margin : 10px;
+}
+
+.project-cards a:hover{
+    background-color :rgba(255, 255,255 ,0.1);
+    color : blue;
+}
+
+
+/* media query */
+@media(max-width:700px){
+    .project-cards {
+        width : 100%;
+    }
+}

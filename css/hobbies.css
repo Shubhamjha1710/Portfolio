@@ -1,0 +1,41 @@
+.hobbies-container{
+    text-align: center;
+    margin :10px;
+}
+
+.hobbies-container h1{
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    margin : 10px;
+}
+
+.hobbies-collection{
+    background-color : rgba(255,255,255,0.2);
+    /* border-top: 2px solid rgba(255,255,255,0.6);
+    border-right : 2px solid rgba(255,255,255,0.6); */
+    border-radius : 20px;
+    width: 80%;
+    margin : 10px auto;
+    padding : 30px;
+    display : flex;
+    flex-direction: column;
+
+    box-shadow :0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter : blur(0.10rem);
+    text-align: center;
+}
+
+
+.single-hobbies{
+    background-color : rgba(255,255,255,0.2);
+    border-top: 3px solid rgba(255,255,255,0.6);
+    border-right : 3px solid rgba(255,255,255,0.6);
+    border-radius :10px;
+    min-height : 35px;
+    width : 60%;
+    margin : 20px auto;
+    padding : 10px;
+    box-shadow :0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter : blur(0.10rem);
+    text-align: center;
+}

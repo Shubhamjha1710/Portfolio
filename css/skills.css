@@ -1,0 +1,51 @@
+/* skills section */
+.skills-container {
+    width: 80%;
+    margin : 50px auto;
+}
+
+.skills-container h1{
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    margin : 10px;
+}
+
+.skills-container p{
+    font-size: 1.2rem;
+}
+
+
+.skills{
+    margin : 25px auto;
+}
+
+.bars
+{
+    height: 30px;
+    background-color: white; 
+    /* // put linear gradient */
+    /* put trasnsitions */
+    border-radius: 10px;
+    text-align: right;
+    padding: 2px;
+}
+
+#cpp , #c{ width: 85%;}
+#html{width: 80%;}
+#css{width: 65%;}
+#JavaScript{width :60%;}
+#mysql{width :70%;}
+#php{width: 55%;}
+#react{width: 60%;}
+
+
+.bars-container{
+    margin :10px;
+}
+
+
+.bars-container h4{
+    margin: 5px 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}

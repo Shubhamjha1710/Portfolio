@@ -1,0 +1,11 @@
+.contact-container{
+    margin : 10px;
+    padding : 10px;
+    text-align : center;
+}
+
+.contact-container h1{
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    margin : 10px;
+}
