@@ -9,3 +9,60 @@
     text-align: center;
     margin : 10px;
 }
+
+.contact-form{
+    /* background-color : rgba(255,255,255,0.1);
+    box-shadow :0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter : blur(0.5rem); */
+    border-radius : 20px;
+    width : 80%;
+    padding :10px;
+    margin : 10px auto;
+}
+
+form{
+    width : 80%;
+    margin : 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content : center;
+}
+
+
+input , textarea{
+    background-color : rgba(255,255,255,0.1);
+    box-shadow :0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter : blur(0.5rem);
+    margin : 15px;
+    padding : 10px;
+    height : 45px;
+    width : 60%;
+    border-radius :5px;
+    outline : none ;
+    text-align : center;
+    border : 2px solid red;
+}
+
+textarea{
+    height : 200px;
+}
+
+input:focus{
+    border :2px solid red;
+}
+
+button{
+    width : 60%;
+    height : 45px;
+    border : 2px solid red;
+    border-radius : 5px;
+    background-color : red;
+    color : white;
+
+}
+
+button:hover{
+    background-color : rgba(255,255,255,0.1);
+    cursor : pointer;
+}
