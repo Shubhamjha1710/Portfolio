@@ -25,10 +25,10 @@
             <ul class="navbar-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#introduction">About Me</a></li>
-                <li><a href="#skills-container">Skills</a></li>
-                <li><a href="#project-container">Projects</a></li>
-                <li><a href="#hobbies-container">My Hobbies</a></li>
-                <li><a href="#contact-container">Connect</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#contact">Connect</a></li>
             </ul>
             <div id="parent">
                 <div id="quick_intro">
@@ -44,6 +44,9 @@
     <!-- about section -->
 
     <div class="introduction" id="introduction">
+        <div class="circle_1">
+        </div>
+
         <div class="container">
             <div class="images">
                 <img src="img/ShubhamKumarJha.jpeg" alt="">
@@ -58,15 +61,13 @@
             </div>
         </div>
 
-        <!-- <div class="circle_1">
-        </div>
         <div class="circle_2">
-        </div> -->
+        </div>
     </div>
 
     <!-- skills section -->
     <hr>
-    <div class="skills-container" id="skills-container">
+    <div class="skills-container" id="skill">
         <h1>Skills</h1>
         <p>
             I know programming language like C++, C and little bit of Python. In Web Development , I know raw HTML, CSS
@@ -123,7 +124,7 @@
 
 
     <!-- project section -->
-    <div class="project-container" id="project-container">
+    <div class="project-container" id="project">
         <h1>My Project</h1>
         <div class="project-cards-collection">
             <div class="project-cards" id="Wheater">
@@ -164,7 +165,7 @@
     <hr>
 
     <!-- hobbies section -->
-    <div class="hobbies-container" id="hobbies-container">
+    <div class="hobbies-container" id="hobbies">
         <h1>Hobbies</h1>
 
         <div class="hobbies-collection">
@@ -188,7 +189,7 @@
 
     <hr>
     <!-- contact section -->
-    <div class="contact-container" id="contact-container">
+    <div class="contact-container" id="contact">
         <h1>Contact Me</h1>
         <div class="contact-form">
             <form action="">
@@ -218,19 +219,14 @@
             speed: 400
         });
 
-        // VanillaTilt.init(document.querySelector("#search_city"), {
-        //     max: 25,
-        //     speed: 400
-        // });
-
-        // VanillaTilt.init(document.querySelector(".circle_1"), {
-        //     max: 20,
-        //     speed: 400
-        // });
-        // VanillaTilt.init(document.querySelector(".circle_2"), {
-        //     max: 20,
-        //     speed: 400
-        // });
+        VanillaTilt.init(document.querySelector(".circle_1"), {
+            max: 20,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelector(".circle_2"), {
+            max: 20,
+            speed: 400
+        });
 
         var typed = new Typed (".ocupation" ,{
             strings : ["Web Developer", "Competitive Programmer" , "Web Designer"],
