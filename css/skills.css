@@ -22,7 +22,7 @@
 .bars
 {
     height: 30px;
-    background-color: white; 
+    background : linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,1));
     /* // put linear gradient */
     /* put trasnsitions */
     border-radius: 10px;

@@ -19,21 +19,31 @@
 <body>
 
     <!-- navaber section -->
-    <nav class="navbar">
-        <ul class="navbar-ul">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#skills-container">Skills</a></li>
-            <li><a href="#project-container">Projects</a></li>
-            <li><a href="#hobbies-container">My Hobbies</a></li>
-            <li><a href="#contact-container">Connect</a></li>
-        </ul>
-    </nav>
+    <header id="header">
+        <img src="img/joshua-bartell-6vvIBTvL90A-unsplash.jpg" alt="">
+        <nav id="navbar">
+            <ul class="navbar-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#introduction">About Me</a></li>
+                <li><a href="#skills-container">Skills</a></li>
+                <li><a href="#project-container">Projects</a></li>
+                <li><a href="#hobbies-container">My Hobbies</a></li>
+                <li><a href="#contact-container">Connect</a></li>
+            </ul>
+            <div id="parent">
+                <div id="quick_intro">
+                    <h2>Hello Everyone, I'm</h2>
+                    <h1>Shubham Kumar Jha</h1>
+                    <h2>I 'm <span class="ocupation"></span></h2>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
     <!-- about section -->
 
-    <div class="introduction">
+    <div class="introduction" id="introduction">
         <div class="container">
             <div class="images">
                 <img src="img/ShubhamKumarJha.jpeg" alt="">
@@ -48,10 +58,10 @@
             </div>
         </div>
 
-        <div class="circle_1">
+        <!-- <div class="circle_1">
         </div>
         <div class="circle_2">
-        </div>
+        </div> -->
     </div>
 
     <!-- skills section -->
@@ -185,7 +195,6 @@
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
-
                 <button>Submit</button>
             </form>
         </div>
@@ -193,23 +202,45 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
 
     <script>
-        VanillaTilt.init(document.querySelector(".container"), {
+
+        window.addEventListener("scroll" , function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky' , window.scrollY > 0);
+            document.getElementById('parent').classList.toggle('quick_intro_display' , window.scrollY)
+        })
+
+        VanillaTilt.init(document.querySelector(".container") , {
             max: 10,
             speed: 400
         });
-        VanillaTilt.init(document.querySelector(".circle_1"), {
-            max: 20,
-            speed: 400
-        });
-        VanillaTilt.init(document.querySelector(".circle_2"), {
-            max: 20,
-            speed: 400
-        });
 
-    </script>
+        // VanillaTilt.init(document.querySelector("#search_city"), {
+        //     max: 25,
+        //     speed: 400
+        // });
+
+        // VanillaTilt.init(document.querySelector(".circle_1"), {
+        //     max: 20,
+        //     speed: 400
+        // });
+        // VanillaTilt.init(document.querySelector(".circle_2"), {
+        //     max: 20,
+        //     speed: 400
+        // });
+
+        var typed = new Typed (".ocupation" ,{
+            strings : ["Web Developer", "Competitive Programmer" , "Web Designer"],
+            typeSpeed : 120,
+            backSpeed : 100,
+            loop : true
+        })
+
+
+    </script> 
 </body>
 
 </html>
