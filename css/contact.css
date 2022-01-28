@@ -11,15 +11,12 @@
 }
 
 .contact-form{
-    /* background-color : rgba(255,255,255,0.1);
-    box-shadow :0 1rem 2rem rgba(0,0,0,0.3);
-    backdrop-filter : blur(0.5rem); */
     border-radius : 20px;
     width : 80%;
     padding :10px;
     margin : 10px auto;
     position : relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 form{
@@ -54,7 +51,7 @@ input:focus{
     border :2px solid red;
 }
 
-button{
+form button{
     width : 60%;
     height : 45px;
     border : 2px solid red;
@@ -64,7 +61,7 @@ button{
 
 }
 
-button:hover{
+form button:hover{
     background-color : rgba(255,255,255,0.1);
     cursor : pointer;
 }

@@ -121,7 +121,7 @@ header img{
     padding :30px;
     margin :10px;
     backdrop-filter : blur(1rem);
-    z-index: 1;
+    z-index: 2;
 }
 
 .circle_1 ,.circle_2{
